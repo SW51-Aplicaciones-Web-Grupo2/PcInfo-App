@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="esp">
+
+    <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link  href="/css/Form_largo/style.css" type="text/css" rel="stylesheet"/>
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+      <script type="text/javascript" src="/js/funcion.js"></script>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+      <script src="https://kit.fontawesome.com/114f6311fa.js" crossorigin="anonymous"></script>
+      <script src="https://kit.fontawesome.com/114f6311fa.js" crossorigin="anonymous"></script>
+      <style>
+        .fondo{
+            height: 100%;
+            width:100%;
+            background-image: linear-gradient(#74EBD5,#9FACE6);
+        }
+      </style>
+     <title>Radio Button</title>
+    </head>
+
+    <body>
+        <header>
+            <nav class="navbar-expand-lg navbar navbar-dark fixed-top " style="background-color: #121212;">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="/index.html"><img src="/Img/logo/logo.png" alt="Logo" width="55" height="55" class="d-inline-block align-text-top"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item px-3">                           
+                            <a class="nav-link color" aria-current="page" href="/index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item px-3">
+                            <a class="nav-link color" aria-current="page" href="/index.html">Componentes</a>
+                        </li>
+                        <li class="nav-item px-3">
+                            <a class="nav-link color" aria-current="page" href="/html/Form_elegir.html">Formulario</a>
+                        </li>
+                        <li class="nav-item px-3">
+                            <a class="nav-link color" aria-current="page" href="/html/quienessomos.html">¿Quienes Somos?</a>
+                        </li>
+                        <li class="nav-item px-3">
+                            <button class="btn btn-danger" type="submit" style="background-color: #E52D27;"><a class="colorbtn" href="/html/login.html">Iniciar Sesión</a></button>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+      
+        <section class="fondo">
+            <section>
+           
+                <div class="container">
+                    
+                   
+                    <div class="row mt-5">
+                        <div class="col mt-5">
+                            <input class="btn btn-danger px-1 mx-auto" type="button" value="Volver" style="margin-top:25px;width: 200px;margin-bottom: 50px;" onclick="retroceder_total()">
+                        </div>
+                        <div class="col mt-5">
+                            <h1 class="titulo"> Formulario Largo </h1>
+                        </div>
+                        <div class="col">
+                          
+                        </div>
+                       
+                        <div class="w-100"></div>
+                        <div class="rectangulo col" style="text-align:center"> ads </div>
+                        
+                    </div>
+                    <div class="row">
+                      <div class="col">
+                        <p class="Anunciante">Uso de PC</p>
+                        <input type="radio" id="radio1" name="Formulario" style="margin-top: 8px"> <a >Gaming</a>
+                        <br>
+                        <input type="radio" id="radio2" name="Formulario" style="margin-top: 8px"> <a>Streaming</a>
+                        <br>
+                        <input type="radio" id="radio1" name="Formulario" style="margin-top: 8px"> <a >Edición</a>
+                        <br>
+                        <input type="radio" id="radio2" name="Formulario" style="margin-top: 8px"> <a>Estudios</a>
+                      </div>
+                      <div class="col">
+                        <p class="Anunciante">Presupuesto</p>
+                        <input type="radio" id="radio1" name="Formulario" style="margin-top: 8px"> <a >Económica</a>
+                        <br>
+                        <input type="radio" id="radio2" name="Formulario" style="margin-top: 8px"> <a>Media</a>
+                        <br>
+                        <input type="radio" id="radio1" name="Formulario" style="margin-top: 8px"> <a >Media-Alta</a>
+                        <br>
+                        <input type="radio" id="radio2" name="Formulario" style="margin-top: 8px"> <a>Alta</a>
+                      </div>
+                      <div class="col">
+                        <p class="Anunciante">Tamaño del PC</p>
+                        <input type="radio" id="radio1" name="Formulario" style="margin-top: 8px"> <a >Mini - (ITX) </a>
+                        <br>
+                        <input type="radio" id="radio2" name="Formulario" style="margin-top: 8px"> <a>Pequeño - (Micro ATX)</a>
+                        <br>
+                        <input type="radio" id="radio1" name="Formulario" style="margin-top: 8px"> <a >Estandar - (ATX)</a>
+                        <br>
+                        <input type="radio" id="radio2" name="Formulario" style="margin-top: 8px"> <a>Gigante - (EATX)</a>
+                      </div>
+                      <div class="col">
+                        <p class="Anunciante"> Diseño</p>
+                        <input type="radio" id="radio1" name="Formulario" style="margin-top: 8px"> <a >Normal</a>
+                        <br>
+                        <input type="radio" id="radio2" name="Formulario" style="margin-top: 8px"> <a>Minimalista</a>
+                        <br>
+                        <input type="radio" id="radio1" name="Formulario" style="margin-top: 8px"> <a >RGB</a>
+                      </div>
+                      <div class="col">
+                        <p class="Anunciante">Tipo de refrigeración</p>
+                        <input type="radio" id="radio1" name="Formulario" style="margin-top: 8px"> <a >Stock</a>
+                        <br>
+                        <input type="radio" id="radio2" name="Formulario" style="margin-top: 8px"> <a>Aire</a>
+                        <br>
+                        <input type="radio" id="radio1" name="Formulario" style="margin-top: 8px"> <a >Liquida</a>
+                        <br>
+                        <input type="radio" id="radio2" name="Formulario" style="margin-top: 8px"> <a>Liquida Custom</a>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col">
+                        <p class="Anunciante">Preparada para overclocking</p>
+                        <input type="radio" id="radio1" name="Formulario" style="margin-top: 8px"> <a >Sí</a>
+                        <br>
+                        <input type="radio" id="radio2" name="Formulario" style="margin-top: 8px"> <a>No</a>
+                      </div>
+                      <div class="col">
+                        <p class="Anunciante">Marca (Opcional) </p>
+                        <input type="radio" id="radio1" name="Formulario" style="margin-top: 8px"> <a >AMD</a>
+                        <br>
+                        <input type="radio" id="radio2" name="Formulario" style="margin-top: 8px"> <a>INTEL</a>
+                      </div>
+                      <div class="col">
+                        <p class="Anunciante">Programas más usados (Opcional) </p>
+                        <input type="placeholder" style="margin-top: 8px;margin-bottom: 25px;">
+                      </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                        </div>
+                        <div class="col">
+                        </div>
+                        <div class="col">
+                            <input type="button" value="Generar recomendación" class="btn btn btn-danger px-4" style="margin-top: 8px;margin-bottom: 25px;" onclick="redireccionar()">
+                        </div>
+                    </div>
+                  </div>
+            </section>
+        </section>
+       
+       
+       
+   <section>
+    <div class="album" style="background-color: #121212;">
+        <div class="container">
+            <footer class="py-4">
+                <div class="row">
+                    <div class="col-6 col-md-4 mb-3">
+                        <h5 style="color: white; font-size: 25px;" >Mejores Marcas: </h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2"><a href="https://www.asus.com" target="_blank" class="nav-link p-0 color">ASUS</a></li>
+                            <li class="nav-item mb-2"><a href="https://www.gigabyte.com"  target="_blank" class="nav-link p-0 color">Gigabyte</a></li>
+                            <li class="nav-item mb-2"><a href="https://www.benq.com/es-pe/index.html"  target="_blank" class="nav-link p-0 color">BenQ</a></li>
+                            <li class="nav-item mb-2"><a href="https://cougargaming.com"  target="_blank" class="nav-link p-0 color">Cougar</a></li>
+                            <li class="nav-item mb-2"><a href="https://www.kingston.com/es"  target="_blank" class="nav-link p-0 color">Kingston</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-6 col-md-4 mb-3">
+                        <h5 style="color: white;font-size: 25px;">Contacto: </h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2"><a href="https://wa.me/51996944981?text=Hola+PC-Info+quiero+estar+en+contacto+con+ustedes"  target="_blank" class="nav-link p-0 color">(01) 999 9999</a></li>
+                            <li class="nav-item mb-2"><a href="https://wa.me/51996944981?text=Hola+PC-Info+quiero+estar+en+contacto+con+ustedes"  target="_blank" class="nav-link p-0 color">Chatea con nosotros</a></li>
+                            <li class="nav-item mb-2"><a href="/html/escribenos.html" class="nav-link p-0 color">Escríbenos</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-6 col-md-4 mb-3">
+                        <h5 style="color: white;font-size: 25px;">Libro de reclamaciones</h5>
+                        <ul class="nav flex-column">
+                            <!--LIBRO DE RECLAMACIONES-->
+                            <li class="nav-item mb-2"><a href="/html/libro_reclamacion1.html"><i class="fa-sharp fa-solid fa-book-open"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="d-flex flex-column flex-sm-row justify-content-between py-2 my-2 border-top">
+                    <p style="color: white;">&copy; 2022 Company, Velocity Express</p>
+                    <ul class="list-unstyled d-flex">
+                        <li class="ms-3"><a href="#" style="color:white"><i class="fab fa-facebook-square"></i></a></li>
+                        <li class="ms-3"><a href="#" style="color:white;"><i class="fab fa-twitter-square"></i></a></li>
+                        <li class="ms-3"><a href="#" style="color:white"><i class="fab fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+            </footer>
+          </div>
+    </div>
+   </section>
+
+    </body>
+</html>

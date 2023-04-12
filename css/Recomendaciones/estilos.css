@@ -1,0 +1,43 @@
+/*HEADER*/
+a.color{
+    color: white;
+}
+
+.color:hover{
+    color: #E52D27;
+}
+
+a.colorbtn{
+    color: white;
+    text-decoration: none;
+}
+
+a.colorbtn:hover{
+    color: #fd9b98;
+}
+
+/*FOOTER*/
+.fab{
+    font-size: 30px;
+}
+
+.fab:hover{
+    color: #E52D27;
+}
+
+.fa-sharp{
+    color: white;
+    font-size: 50px;
+}
+
+.fa-sharp:hover{
+    color: #E52D27;
+}
+
+.color{
+    color: rgb(139, 139, 139);
+}
+
+.color:hover{
+    color: #E52D27;
+}

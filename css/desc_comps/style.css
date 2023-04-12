@@ -1,0 +1,163 @@
+.Anunciante{
+    margin-top: 45px;
+    font-size: 30px;
+    font-weight: bold;
+}
+.titulo{
+    margin-top: 55px;
+    margin-left: 10px;
+    text-decoration: underline;
+}
+
+/*HEADER*/
+a.color{
+    color: white;
+}
+
+.color:hover{
+    color: #E52D27;
+}
+
+a.colorbtn{
+    color: white;
+    text-decoration: none;
+}
+
+a.colorbtn:hover{
+    color: #fd9b98;
+}
+
+/*FOOTER*/
+.fab{
+    font-size: 30px;
+}
+
+.fab:hover{
+    color: #E52D27;
+}
+
+.fa-sharp{
+    color: white;
+    font-size: 50px;
+}
+
+.fa-sharp:hover{
+    color: #E52D27;
+}
+
+.color{
+    color: rgb(139, 139, 139);
+}
+
+.color:hover{
+    color: #E52D27;
+}
+.rectangulo {
+
+    margin-top: 55px;
+    margin-left: 10px;
+   
+    background: rgb(149, 149, 158);       /* Fondo de color azul */
+    border: 3px solid #000; /* Borde color negro y de 3 píxeles de grosor */
+    width: 250px;           /* Ancho de 250 píxeles */
+    height: 70px;          /* Alto de 150 píxeles */
+  }
+
+
+  .containerr {
+	position: absolute;
+	
+	transform: translate(-50%,-50%);
+	padding: 10px;
+}
+
+input {
+	outline: none;
+	box-sizing: border-box;
+	height: 50px;
+	width: 0px;
+	padding: 0 20px;
+	color: #000;
+	border-radius: 50px;
+	font-size: 20px;
+	border: 1px solid #D50000;
+	transition: all .7s ease;
+}
+
+::placeholder {
+	color: grey;
+}
+
+.btnn {
+	position: absolute;
+	right: 10px;
+	top: 60px;
+	width: 20px;
+	height: 20px;
+	background: #D50000;
+	line-height: 80px;
+	border-radius: 50%;
+	text-align: center;
+	cursor: pointer;
+	transition: .5s;
+}
+
+.btnn i {
+	font-size: 15px;
+	color: white;
+	line-height: 80px;
+	transition: all .7s ease;
+}
+
+.containerr:hover input {
+	width: 350px;
+}
+
+.containerr:hover i{
+	transform: rotate(-360deg);
+}
+
+.btnn:hover{
+	background: #cc0000;
+}
+
+
+.alineas{
+    margin-top: 45px;
+    padding-top: 75px;
+    margin-bottom: 45px;
+}
+
+.formato-img{
+    height: 50vh;
+    width: 50vh;
+    align-items: center;
+}
+@media screen {
+    
+}
+/*FOOTER*/
+.fab{
+    font-size: 30px;
+}
+
+.fab:hover{
+    color: #E52D27;
+}
+
+.fa-sharp{
+    color: white;
+    font-size: 50px;
+}
+
+.fa-sharp:hover{
+    color: #E52D27;
+}
+
+.color{
+    color: rgb(139, 139, 139);
+}
+
+.color:hover{
+    color: #E52D27;
+}

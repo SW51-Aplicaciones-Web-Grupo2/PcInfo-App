@@ -1,0 +1,64 @@
+.Anunciante{
+    margin-top: 45px;
+    font-size: 30px;
+    font-weight: bold;
+}
+.titulo{
+    margin-top: 55px;
+    margin-left: 10px;
+    text-decoration: underline;
+}
+
+/*HEADER*/
+a.color{
+    color: white;
+}
+
+.color:hover{
+    color: #E52D27;
+}
+
+a.colorbtn{
+    color: white;
+    text-decoration: none;
+} 
+
+a.colorbtn:hover{
+    color: #fd9b98;
+}
+
+/*FOOTER*/
+.fab{
+    font-size: 30px;
+}
+
+.fab:hover{
+    color: #E52D27;
+}
+
+.fa-sharp{
+    color: white;
+    font-size: 50px;
+}
+
+.fa-sharp:hover{
+    color: #E52D27;
+}
+
+.color{
+    color: rgb(139, 139, 139);
+}
+
+.color:hover{
+    color: #E52D27;
+}
+.rectangulo {
+
+    margin-top: 55px;
+    margin-left: 10px;
+   
+    background: rgb(207, 207, 209);       /* Fondo de color azul */
+    border: 3px solid #000; /* Borde color negro y de 3 píxeles de grosor */
+    width: 50px;           /* Ancho de 250 píxeles */
+    height: 70px;          /* Alto de 150 píxeles */
+  }

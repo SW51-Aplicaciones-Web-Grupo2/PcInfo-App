@@ -1,0 +1,51 @@
+/*HEADER*/
+a.color{
+    color: white;
+}
+
+.color:hover{
+    color: #E52D27;
+}
+
+a.colorbtn{
+    color: white;
+    text-decoration: none;
+}
+
+a.colorbtn:hover{
+    color: #fd9b98;
+}
+
+/*FOOTER*/
+.fab{
+    font-size: 30px;
+}
+
+.fab:hover{
+    color: #E52D27;
+}
+
+.fa-sharp{
+    color: white;
+    font-size: 50px;
+}
+
+.fa-sharp:hover{
+    color: #E52D27;
+}
+
+.color{
+    color: rgb(139, 139, 139);
+}
+
+.color:hover{
+    color: #E52D27;
+}
+.rectangulo {
+    padding-top: 60px;
+    margin-top: 60px;
+    background: rgb(234, 234, 240);       /* Fondo de color azul */
+    border: 3px solid #000; /* Borde color negro y de 3 píxeles de grosor */
+    width: 250px;           /* Ancho de 250 píxeles */
+    height: 450px;          /* Alto de 150 píxeles */
+  }
