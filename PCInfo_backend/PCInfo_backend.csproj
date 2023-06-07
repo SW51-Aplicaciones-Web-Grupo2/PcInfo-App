@@ -6,4 +6,10 @@
         <ImplicitUsings>enable</ImplicitUsings>
     </PropertyGroup>
 
+    <ItemGroup>
+      <Folder Include="Recommendations\Domain\Repositories\" />
+      <Folder Include="Recommendations\Domain\Services\" />
+      <Folder Include="Shared\" />
+    </ItemGroup>
+
 </Project>
