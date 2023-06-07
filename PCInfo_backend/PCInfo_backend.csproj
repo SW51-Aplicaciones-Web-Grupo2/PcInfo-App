@@ -8,7 +8,6 @@
 
     <ItemGroup>
       <Folder Include="Recommendations\Domain\Repositories\" />
-      <Folder Include="Recommendations\Domain\Services\" />
     </ItemGroup>
 
 </Project>
