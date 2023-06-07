@@ -2,6 +2,7 @@
 
 public class GPUResource
 {
+    public int id { get; set; }
     public string modelo { get; set; }
     public string velocidad { get; set; }
     public string frecuencia { get; set; }
