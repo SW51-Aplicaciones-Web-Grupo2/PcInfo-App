@@ -2,6 +2,7 @@
 
 public class Teclado
 {
+    public int id { get; set; }
     public string tipo { get; set; }
     public string RGB { get; set; }
     public int teclas { get; set; }

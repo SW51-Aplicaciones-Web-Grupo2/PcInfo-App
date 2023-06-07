@@ -2,6 +2,7 @@
 
 public class Mouse
 {
+    public int id { get; set; }
     public string Tasaderepeticion { get; set; }
     public string sensor { get; set; }
     public int DPI { get; set; }

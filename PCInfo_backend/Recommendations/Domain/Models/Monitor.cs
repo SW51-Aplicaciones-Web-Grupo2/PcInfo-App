@@ -2,6 +2,7 @@
 
 public class Monitor
 {
+    public int id { get; set; }
     public string resolucion { get; set; }
     public int pulgadas { get; set; }
     public string HDR { get; set; }

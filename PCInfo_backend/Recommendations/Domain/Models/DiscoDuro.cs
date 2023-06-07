@@ -2,6 +2,7 @@
 
 public class DiscoDuro
 {
+    public int id { get; set; }
     public string modelo { get; set; }
     public int capacidad { get; set; }
     public string cache { get; set; }
