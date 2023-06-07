@@ -7,11 +7,12 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <Folder Include="Recommendations\Domain\Repositories\" />
-    </ItemGroup>
-
-    <ItemGroup>
       <PackageReference Include="AutoMapper" Version="12.0.1" />
+      <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.0-preview.4.23259.3" />
+      <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="8.0.0-preview.4.23259.3" />
+      <PackageReference Include="Microsoft.EntityFrameworkCore.Relational.Design" Version="2.0.0-preview1-final" />
+      <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.5" />
+      <PackageReference Include="MySql.EntityFrameworkCore" Version="7.0.2" />
     </ItemGroup>
 
 </Project>
