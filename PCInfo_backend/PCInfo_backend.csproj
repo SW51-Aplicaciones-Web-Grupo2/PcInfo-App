@@ -15,8 +15,4 @@
       <PackageReference Include="MySql.EntityFrameworkCore" Version="7.0.2" />
     </ItemGroup>
 
-    <ItemGroup>
-      <Folder Include="Recommendations\Persistence\Repositories\" />
-    </ItemGroup>
-
 </Project>
