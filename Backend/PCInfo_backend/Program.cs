@@ -32,7 +32,7 @@ builder.Services.AddAutoMapper(typeof(ModelToResourceProfile), typeof(ResourceTo
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 builder.Services.AddScoped<IProductoRepository, ProductoRepository>();
 /*builder.Services.AddScoped<ICPURepository, CPURepository>();
-faltan los repos de todos menos el ProductoRepository, porfa hacerlo
+faltan los repos de todos menos el ProductoRepository, porfa hacerlo.
 */
 
 var app = builder.Build();
