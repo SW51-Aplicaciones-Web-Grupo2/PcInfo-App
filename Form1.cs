@@ -153,5 +153,25 @@ namespace Aplicacion
                 }
             }
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            string query = "SELECT * FROM Productos";
+
+            using (SqlConnection connection = new SqlConnection(Conexion.cadena))
+            {
+                using (SqlCommand command = new SqlCommand(query, connection))
+                {
+                    connection.Open();
+                    SqlDataReader reader = command.ExecuteReader();
+
+                    DataTable dt = new DataTable();
+                    dt.Load(reader);
+                    dataGridView1.DataSource = dt;
+                    reader.Close();
+                    connection.Close();
+                }
+            }
+        }
     }
 }
