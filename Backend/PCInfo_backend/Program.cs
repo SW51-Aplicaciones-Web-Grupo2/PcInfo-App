@@ -1,6 +1,7 @@
 using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
 using PCInfo_backend.Recommendations.Domain.Repositories;
+using PCInfo_backend.Recommendations.Domain.Repositories.Users;
 using PCInfo_backend.Recommendations.Mapping;
 using PCInfo_backend.Recommendations.Persistence.Repositories;
 using PCInfo_backend.Shared.Persistence.Contexts;
@@ -17,7 +18,7 @@ builder.Services.AddSwaggerGen();
 
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
 builder.Services.AddDbContext<AppDbContext>(
-    options => options.UseSqlServer(connectionString)
+    options => options.UseMySQL(connectionString)
         .LogTo(Console.WriteLine, LogLevel.Information)
         .EnableSensitiveDataLogging()
         .EnableDetailedErrors());
@@ -30,7 +31,11 @@ builder.Services.AddAutoMapper(typeof(ModelToResourceProfile), typeof(ResourceTo
 
 // Dependency Injection Configuration
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
-builder.Services.AddScoped<IProductoRepository, ProductoRepository>();
+
+builder.Services.AddScoped<IUserRepository, UserRepository>();
+builder.Services.AddScoped<IClienteRepository, ClienteRepository>();
+
+// builder.Services.AddScoped<IProductoRepository, ProductoRepository>();
 /*builder.Services.AddScoped<ICPURepository, CPURepository>();
 faltan los repos de todos menos el ProductoRepository, porfa hacerlo.
 */
