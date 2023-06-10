@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using PCInfo_backend.Recommendations.Domain.Models;
+using PCInfo_backend.Recommendations.Domain.Models.Users;
 using PCInfo_backend.Shared.Extensions;
 using Monitor = PCInfo_backend.Recommendations.Domain.Models.Monitor;
 
@@ -10,6 +11,11 @@ public class AppDbContext : DbContext
     public AppDbContext(DbContextOptions options) : base(options)
     {
     }
+
+    
+    public DbSet<User> Users { get; set; }
+    public DbSet<Cliente> Clientes { get; set; }
+    //hacer model
 
     public DbSet<Producto> Productos { get; set; }
     
@@ -23,7 +29,23 @@ public class AppDbContext : DbContext
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         base.OnModelCreating(modelBuilder);
-        modelBuilder.Entity<Producto>().ToTable("Productos");
+        modelBuilder.Entity<User>().ToTable("usuario");
+        modelBuilder.Entity<User>().HasKey(u => u.IDuser);
+        modelBuilder.Entity<User>().Property(u => u.IDuser).IsRequired().ValueGeneratedOnAdd();
+        modelBuilder.Entity<User>().Property(u => u.Usuario).IsRequired().HasMaxLength(50);
+        
+        modelBuilder.Entity<Cliente>().ToTable("cliente");
+        modelBuilder.Entity<Cliente>().HasKey(c => c.DNI);
+        modelBuilder.Entity<Cliente>().Property(c => c.DNI).IsRequired().ValueGeneratedOnAdd();
+        modelBuilder.Entity<Cliente>().Property(c => c.Nombre).IsRequired().HasMaxLength(50);
+        //Relationships
+        modelBuilder.Entity<Cliente>()
+            .HasOne(c => c.user)
+            .WithOne()
+            .HasForeignKey<Cliente>(c => c.IDuser);
+        
+        
+        /*modelBuilder.Entity<Producto>().ToTable("Productos");
         modelBuilder.Entity<Producto>().HasKey(p => p.Codigo);
         modelBuilder.Entity<Producto>().Property(p => p.Codigo).IsRequired().ValueGeneratedOnAdd();
         modelBuilder.Entity<Producto>().Property(p => p.Nombre).IsRequired().HasMaxLength(30);
@@ -76,7 +98,7 @@ public class AppDbContext : DbContext
         modelBuilder.Entity<Teclado>()
             .HasOne(t => t.producto)
             .WithOne()
-            .HasForeignKey<Teclado>(t => t.codigoProducto);
+            .HasForeignKey<Teclado>(t => t.codigoProducto);*/
         
         // Apply Snake Case Naming Convention
         modelBuilder.UseSnakeCaseNamingConvention();
