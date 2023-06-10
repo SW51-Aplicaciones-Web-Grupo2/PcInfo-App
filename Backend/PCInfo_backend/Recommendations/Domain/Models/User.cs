@@ -1,4 +1,4 @@
-﻿namespace PCInfo_backend.Recommendations.Domain.Models.Users;
+﻿namespace PCInfo_backend.Recommendations.Domain.Models;
 
 public class User
 {

@@ -1,5 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using PCInfo_backend.Recommendations.Domain.Models.Users;
+using PCInfo_backend.Recommendations.Domain.Models;
 using PCInfo_backend.Recommendations.Domain.Repositories.Users;
 using PCInfo_backend.Shared.Persistence.Contexts;
 using PCInfo_backend.Shared.Persistence.Repositories;

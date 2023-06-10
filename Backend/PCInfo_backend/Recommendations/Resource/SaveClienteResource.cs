@@ -1,7 +1,11 @@
-﻿namespace PCInfo_backend.Recommendations.Resource;
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace PCInfo_backend.Recommendations.Resource;
 
 public class SaveClienteResource
 {
+    [Required]
+    [MaxLength(50)]
     public string Nombre { get; set; }
     public string Apellidos { get; set; }
     public string Telefono { get; set; }

@@ -1,4 +1,4 @@
-﻿using PCInfo_backend.Recommendations.Domain.Models.Users;
+﻿using PCInfo_backend.Recommendations.Domain.Models;
 
 namespace PCInfo_backend.Recommendations.Domain.Repositories.Users;
 
