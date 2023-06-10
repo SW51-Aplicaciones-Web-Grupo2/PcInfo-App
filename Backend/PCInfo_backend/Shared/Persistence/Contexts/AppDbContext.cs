@@ -1,6 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using PCInfo_backend.Recommendations.Domain.Models;
-using PCInfo_backend.Recommendations.Domain.Models.Users;
 using PCInfo_backend.Shared.Extensions;
 using Monitor = PCInfo_backend.Recommendations.Domain.Models.Monitor;
 
@@ -10,22 +9,23 @@ public class AppDbContext : DbContext
 {
     public AppDbContext(DbContextOptions options) : base(options)
     {
+        
     }
 
     
-    public DbSet<User> Users { get; set; }
-    public DbSet<Cliente> Clientes { get; set; }
+    public DbSet<User>? Users { get; set; }
+    public DbSet<Cliente>? Clientes { get; set; }
     //hacer model
 
-    public DbSet<Producto> Productos { get; set; }
+    public DbSet<Producto>? Productos { get; set; }
     
-    public DbSet<CPU> CPUs { get; set; }
-    public DbSet<DiscoDuro> DiscosDuros { get; set; }
-    public DbSet<GPU> GPUs { get; set; }
-    public DbSet<Monitor> Monitors { get; set; }
-    public DbSet<Mouse> Mouses { get; set; }
-    public DbSet<RAM> RAMs { get; set; }
-    public DbSet<Teclado> Teclados { get; set; }
+    public DbSet<CPU>? CPUs { get; set; }
+    public DbSet<DiscoDuro>? DiscosDuros { get; set; }
+    public DbSet<GPU>? GPUs { get; set; }
+    public DbSet<Monitor>? Monitors { get; set; }
+    public DbSet<Mouse>? Mouses { get; set; }
+    public DbSet<RAM>? RAMs { get; set; }
+    public DbSet<Teclado>? Teclados { get; set; }
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         base.OnModelCreating(modelBuilder);

@@ -1,7 +1,10 @@
-﻿namespace PCInfo_backend.Recommendations.Domain.Models;
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace PCInfo_backend.Recommendations.Domain.Models;
 
 public class Producto
 {
+    [Key]
     public int Codigo { get; set; }
     public string Nombre { get; set; }
     public string Marca { get; set; }

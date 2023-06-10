@@ -1,9 +1,10 @@
-using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
 using PCInfo_backend.Recommendations.Domain.Repositories;
 using PCInfo_backend.Recommendations.Domain.Repositories.Users;
+using PCInfo_backend.Recommendations.Domain.Services;
 using PCInfo_backend.Recommendations.Mapping;
 using PCInfo_backend.Recommendations.Persistence.Repositories;
+using PCInfo_backend.Recommendations.Services;
 using PCInfo_backend.Shared.Persistence.Contexts;
 using PCInfo_backend.Shared.Persistence.Repositories;
 
@@ -33,7 +34,9 @@ builder.Services.AddAutoMapper(typeof(ModelToResourceProfile), typeof(ResourceTo
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 
 builder.Services.AddScoped<IUserRepository, UserRepository>();
+// builder.Services.AddScoped<IUserService, UserService>();
 builder.Services.AddScoped<IClienteRepository, ClienteRepository>();
+builder.Services.AddScoped<IClienteService, ClienteService>();
 
 // builder.Services.AddScoped<IProductoRepository, ProductoRepository>();
 /*builder.Services.AddScoped<ICPURepository, CPURepository>();
@@ -42,7 +45,7 @@ faltan los repos de todos menos el ProductoRepository, porfa hacerlo.
 
 var app = builder.Build();
 
-app.MapGet("/", () => "Hello World!");
+// app.MapGet("/", () => "Hello World!");
 
 // Validation for ensuring Database Objects are created
 using (var scope = app.Services.CreateScope())
