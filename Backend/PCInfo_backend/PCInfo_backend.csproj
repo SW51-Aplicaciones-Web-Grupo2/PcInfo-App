@@ -22,7 +22,14 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="PCInfo\Security\" />
+      <Folder Include="PCInfo\Security\Authorization\" />
+      <Folder Include="PCInfo\Security\Controllers\" />
+      <Folder Include="PCInfo\Security\Domain\" />
+      <Folder Include="PCInfo\Security\Exceptions\" />
+      <Folder Include="PCInfo\Security\Mapping\" />
+      <Folder Include="PCInfo\Security\Persistence\" />
+      <Folder Include="PCInfo\Security\Resources\" />
+      <Folder Include="PCInfo\Security\Services\" />
       <Folder Include="Shared\Persistence\" />
     </ItemGroup>
 
