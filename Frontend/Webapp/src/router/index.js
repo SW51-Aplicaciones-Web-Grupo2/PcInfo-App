@@ -17,7 +17,7 @@ const router = createRouter({
     {
       path: '/profile',
       name: 'profile',
-      component: () => import("../componetes/pages/user-login.component.vue")
+      component: () => import("../componetes/pages/register.component.vue")
     },
     {
       path: '/parkingList',
