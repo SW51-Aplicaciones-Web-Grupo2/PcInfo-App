@@ -133,7 +133,6 @@ export default {
 }
 
 
-
 .input-label {
     display: block;
     color: #282828;
